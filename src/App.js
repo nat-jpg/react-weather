@@ -40,15 +40,12 @@ export default function App() {
     return (
       <div>
         {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt="weather" />
-          </li>
-        </ul>
+          <h1>{city}</h1>
+          <h3>{weather.description}</h3>
+          <img src={weather.icon} alt="weather" />
+          <p>Temperature: {Math.round(weather.temperature)}°C</p> 
+         <p>Humidity: {weather.humidity}%</p>
+         <p>Wind: {weather.wind}km/h</p>
       </div>
     );
   } else {
