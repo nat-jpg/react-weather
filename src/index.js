@@ -8,6 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <p><a href="https://github.com/nat-jpg/react-weather">Open-source code</a> from Nathalie Donado</p>
   </React.StrictMode>
 );
 
